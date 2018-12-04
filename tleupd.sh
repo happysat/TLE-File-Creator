@@ -16,11 +16,11 @@ echo "PCSAT (NO-44)" >> fav.txt
 egrep -A1 -w '26931U' amateur.txt >> fav.txt
 echo "SAUDISAT 1C (SO-50)" >> fav.txt
 egrep -A1 -w '27607U' amateur.txt >> fav.txt
-echo "NOAA 15 [B]" >> fav.txt
+echo "NOAA 15" >> fav.txt
 egrep -A1 -w '25338U' noaa.txt >> fav.txt
-echo "NOAA 18 [B]" >> fav.txt
+echo "NOAA 18" >> fav.txt
 egrep -A1 -w '28654U' noaa.txt >> fav.txt
-echo "NOAA 19 [+]" >> fav.txt
+echo "NOAA 19" >> fav.txt
 egrep -A1 -w '33591U' noaa.txt >> fav.txt
 echo "METEOR-M 1" >> fav.txt
 egrep -A1 -w '35865U' weather.txt >> fav.txt
@@ -38,9 +38,9 @@ echo "LILACSAT 2" >> fav.txt
 egrep -A1 -w '40908U' amateur.txt >> fav.txt
 echo "FUNCUBE-1 (AO-73)" >> fav.txt
 egrep -A1 -w '39444U' amateur.txt >> fav.txt
-echo "COSMOS 2407 [+]" >> fav.txt
+echo "COSMOS 2407" >> fav.txt
 egrep -A1 -w '28380U' musson.txt >> fav.txt
-echo "COSMOS 2463 [+]" >> fav.txt
+echo "COSMOS 2463" >> fav.txt
 egrep -A1 -w '36519U' musson.txt >> fav.txt
 echo "Downloading Space-track TLE Files"
 
