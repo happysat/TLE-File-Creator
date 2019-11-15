@@ -3,7 +3,6 @@
 echo "TLE File Creator"
 echo ""
 echo "Downloading Celestrak TLE Files"
-wget http://www.celestrak.com/NORAD/elements/musson.txt
 wget http://www.celestrak.com/NORAD/elements/stations.txt
 wget http://www.celestrak.com/NORAD/elements/amateur.txt
 wget http://www.celestrak.com/NORAD/elements/weather.txt
@@ -26,6 +25,8 @@ echo "METEOR-M 1" >> fav.txt
 egrep -A1 -w '35865U' weather.txt >> fav.txt
 echo "METEOR-M 2" >> fav.txt
 egrep -A1 -w '40069U' weather.txt >> fav.txt
+echo "METEOR-M2 2" >> fav.txt
+egrep -A1 -w '44387U' weather.txt >> fav.txt
 echo "PSAT" >> fav.txt
 egrep -A1 -w '40654U' nasabare.txt >> fav.txt
 echo "FOX-1A" >> fav.txt
@@ -34,14 +35,8 @@ echo "FOX-1B" >> fav.txt
 egrep -A1 -w '43017U' nasabare.txt >> fav.txt
 echo "FOX-1D" >> fav.txt
 egrep -A1 -w '43137U' nasabare.txt >> fav.txt
-echo "LILACSAT 2" >> fav.txt
-egrep -A1 -w '40908U' amateur.txt >> fav.txt
 echo "FUNCUBE-1 (AO-73)" >> fav.txt
 egrep -A1 -w '39444U' amateur.txt >> fav.txt
-echo "COSMOS 2407" >> fav.txt
-egrep -A1 -w '28380U' musson.txt >> fav.txt
-echo "COSMOS 2463" >> fav.txt
-egrep -A1 -w '36519U' musson.txt >> fav.txt
 echo "Downloading Space-track TLE Files"
 
 curl -c cookies.txt -b cookies.txt https://www.space-track.org/ajaxauth/login -d 'identity=username&password=password'
